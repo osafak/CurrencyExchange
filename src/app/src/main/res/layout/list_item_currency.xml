@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardUseCompatPadding="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <TextView
+        android:id="@+id/CurrencyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        tools:text="Döviz Adı"/>
+    <TextView
+        android:id="@+id/Selling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="65dp"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_green_light"
+        tools:text="Alış"/>
+    <TextView
+        android:id="@+id/Buying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/Selling"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        tools:text="Satış"/>
+
+        <ImageView
+            android:id="@+id/statusImage"
+            android:background="@drawable/down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/Selling"
+            android:layout_toStartOf="@+id/Selling"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+    </LinearLayout>
