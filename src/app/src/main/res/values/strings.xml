@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Döviz Kurları</string>
+    <string name="message">Mesaj Gönder</string>
+    <string name="refresh_button">Yenile</string>
+    <string name="refresh_message">Yenile</string>
+    <string name="adsUnit">ca-app-pub-5728089941058738/8382896404</string>
+    <string name="adsUnitIntersititial">ca-app-pub-5728089941058738/1935750007</string>
+</resources>
